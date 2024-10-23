@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian News</title>
+</head>
+<body>
+    <h1>Latest Indian News</h1>
+    <ul>
+        {% for article in articles %}
+            <li>
+                <a href="{{ article.url }}" target="_blank">{{ article.title }}</a>
+                <!-- <p>{{ article.description }}</p> -->
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
